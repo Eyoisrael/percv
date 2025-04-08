@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Israel Olowoeyo - CV Website</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <style>
+
+    
+    /* Import Google Font for Styling */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+    /* General Reset and Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow-y: auto; /* Enables scrolling */
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    /* Static Background Image */
+    body {
+      background: url('123.jpg') no-repeat center center fixed; /* Replace '123.jpg' with your image file */
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Canvas for Animation */
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Behind the content but above the background */
+    }
+
+    /* Main Content Container */
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1; /* Above the canvas animation */
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #13023f;
+      transform: scale(1.1);
+    }
+
+    section {
+      margin: 20px 0;
+    }
+
+    .section-title {
+      font-size: 1.8em;
+      color: #13023f;
+      margin-bottom: 10px;
+      display: inline-block;
+      border-bottom: 3px solid #333;
+      transition: color 0.3s ease;
+    }
+
+    .section-title:hover {
+      color: #e91e63;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 5px 0;
+      padding: 10px;
+      background: #f4f4f4;
+      border-left: 4px solid #13023f;
+    }
+
+    form button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: linear-gradient(to right, #13023f, #e91e63);
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    form button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #e91e63, #13023f);
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Canvas for Animation -->
+  <canvas class="background" id="techBackground"></canvas>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Israel Olalekan Olowoeyo</h1>
+      <p>Industrial Chemist | Full Stack Developer | Business Developer</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a versatile professional with expertise in Industrial Chemistry, Software Development, and Business Development. My roles at Odinata Studies and Immigration Consult LTD demonstrate my ability to drive growth, optimize processes, and deliver innovative solutions.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>JavaScript, HTML, CSS, React, Angular, Phython</li>
+        <li>Node.js, Express.js, MongoDB</li>
+        <li>AI-Powered Development and Optimization</li>
+        <li>Laboratory Techniques and Data Analysis</li>
+        <li>Business Strategy and Market Research</li>
+        <li>Adobe Creative Suite, Figma, Canva, Corel Draw</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <ul>
+        <li>University of Benin: Bachelor's in Industrial Chemistry (2018 - 2024)</li>
+        <li>Rufus Giwa Polytechnic: Diploma in Computer Studies (2015 - 2017)</li>
+        <li>Africa Leadership Xelerator: AI Development & Virtual Assistance (2023 - 2024)</li>
+      </ul>
+    </section>
+
+    <!-- Business Development Section -->
+    <section>
+      <h2 class="section-title">Business Development</h2>
+      <p>
+        In my roles at Odinata Studies Immigration Consult LTD and , I have driven business growth and operational excellence through:
+      </p>
+      <ul>
+        <li>Devising market-entry strategies to increase revenue by 20%.</li>
+        <li>Streamlining workflows and reducing costs by 15% across multiple projects.</li>
+        <li>Building and maintaining partnerships with industry-leading stakeholders.</li>
+        <li>Implementing innovative business solutions to enhance efficiency and profitability.</li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <ul>
+        <li>Business Developer at Odinata Studies Immigration Consult LTD (2024 - Present): Spearheading strategic initiatives for client acquisition and revenue growth.</li>
+        <li>Software Developer at Omolord Network Solution (2021 - 2024): Designed software applications and managed data systems.</li>
+        <li>Intern at National Centre for Energy and Environment (2021 - 2022): Conducted advanced experiments and research, including biogas production and oil extraction.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:israelolowoeyo100@gmail.com">israelolowoeyo100@gmail.com</a></p>
+      <p>Phone: +234 8151212944</p>
+      <p>Location: Ajibolade Street, Owo, Ondo State</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright &copy; 2025 Israel Olowoeyo</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript for Animated Background -->
+  <script>
+    const canvas = document.getElementById('techBackground');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particlesArray = [];
+    const numberOfParticles = 100;
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 5 + 1;
+        this.speedX = Math.random() * 3 - 1.5;
+        this.speedY = Math.random() * 3 - 1.5;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+      }
+      draw() {
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      particlesArray.length = 0;
+      for (let i = 0; i < numberOfParticles; i++) {
+        particlesArray.push(new Particle());
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particlesArray.forEach(particle => {
+        particle.update();
+        particle.draw();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+
+    initParticles();
+    animateParticles();
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initParticles();
+    });
+  </script>
+</body>
+</html>
